@@ -109,14 +109,19 @@ int main()
 		//cout<<c<<" ";
 			v[j]=c;
 			a[j]=d;
-		}//cout<<" * ";
+		}
      	vector<int> d=solve(v,a,5);//store your result in required data type
 		vector<int> e=solve2(v,a,5);//store another user's code of whom solution you want to hack
         if(d!=e)
-        for(ll i=0;i<d.size();i++)
+	{ for(ll i=0;i<n;i++)
         {
-            cout<<d[i]<<" ";//print the desired output
+            cout<<v[i]<<" ";//print the desired output
+        }cout<<" * ";
+	for(ll i=0;i<n;i++)
+        {
+            cout<<a[i]<<" ";//print the desired output
         }
+	}
         cout<<endl;
 	}
 	return 0;
